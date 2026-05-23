@@ -1,0 +1,167 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+[data-theme="light"] {
+  --bg: #FAF8F5; --bg-card: #FFFFFF; --text: #2C2420; --text-sec: #8B7D6B;
+  --accent: #C9A96E; --border: #E8E0D8; --shadow: rgba(44,36,32,0.08);
+  --accent-contrast: #FFFFFF; --hover-bg: rgba(201,169,110,0.08);
+}
+[data-theme="dark"] {
+  --bg: #1A1512; --bg-card: #2D2520; --text: #F5F0E8; --text-sec: #D4C5A9;
+  --accent: #A69070; --border: #3D3530; --shadow: rgba(0,0,0,0.3);
+  --accent-contrast: #1A1512; --hover-bg: rgba(166,144,112,0.1);
+}
+
+* { transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg); color: var(--text);
+  max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem;
+  min-height: 100vh; line-height: 1.6;
+}
+
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem;
+}
+.header__title {
+  font-family: 'Cormorant Garamond', serif; font-weight: 600;
+  font-size: 1.75rem; letter-spacing: 0.04em; color: var(--text);
+}
+
+.theme-toggle {
+  background: none; border: 1px solid var(--border); border-radius: 50%;
+  width: 2.5rem; height: 2.5rem; cursor: pointer;
+  color: var(--text-sec); font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif; font-weight: 500;
+  font-size: 1.35rem; color: var(--text-sec); text-align: center;
+  margin-bottom: 1.5rem; letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+.outfit-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden;
+  box-shadow: 0 2px 12px var(--shadow); cursor: pointer;
+}
+.outfit-card:hover { box-shadow: 0 4px 20px var(--shadow); }
+.outfit-card--hero { max-width: 480px; margin: 0 auto; cursor: default; }
+.outfit-card__image-wrap { padding: 1rem; display: flex; justify-content: center; }
+.outfit-card__image {
+  width: 100%; max-height: 520px; object-fit: contain; border-radius: 8px;
+}
+.outfit-card__info { padding: 0.75rem 1.25rem 1.25rem; }
+.outfit-card__palette {
+  font-family: 'Cormorant Garamond', serif; font-weight: 600;
+  font-size: 1.1rem; color: var(--accent); margin-bottom: 0.35rem;
+}
+.outfit-card__rationale {
+  font-size: 0.88rem; color: var(--text-sec); font-style: italic; line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex; justify-content: center; gap: 0.75rem;
+  margin-top: 1.5rem; flex-wrap: wrap;
+}
+.btn-shuffle {
+  padding: 0.6rem 1.8rem; background: transparent;
+  border: 1.5px solid var(--accent); border-radius: 100px;
+  color: var(--accent); cursor: pointer;
+  font-family: 'Cormorant Garamond', serif; font-size: 1rem;
+  font-weight: 500; letter-spacing: 0.05em;
+}
+.btn-shuffle:hover { background: var(--accent); color: var(--accent-contrast); }
+
+.btn-worn {
+  padding: 0.6rem 1.8rem; border-radius: 100px; cursor: pointer;
+  font-family: 'Cormorant Garamond', serif; font-size: 1rem;
+  font-weight: 500; letter-spacing: 0.05em;
+  border: 1.5px dashed var(--border); color: var(--text-sec);
+  background: transparent; transition: all 0.35s ease;
+}
+.btn-worn:hover { border-color: var(--accent); color: var(--accent); }
+.btn-worn--active {
+  background: var(--accent); color: var(--accent-contrast);
+  border: 1.5px solid var(--accent);
+  transform: scale(1.05);
+  box-shadow: 0 2px 12px var(--shadow);
+}
+.btn-worn--pop { animation: pop 0.4s ease; }
+@keyframes pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.15); }
+  100% { transform: scale(1.05); }
+}
+.btn-worn--unpop { animation: unpop 0.3s ease; }
+@keyframes unpop {
+  0% { transform: scale(1.05); }
+  50% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+
+.browse-link {
+  display: block; text-align: center; margin-top: 1.5rem;
+  font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;
+  color: var(--accent); text-decoration: none; letter-spacing: 0.04em;
+}
+.browse-link:hover { text-decoration: underline; }
+
+.back-link {
+  font-size: 0.85rem; color: var(--text-sec); text-decoration: none;
+}
+.back-link:hover { color: var(--accent); }
+.header__nav { display: flex; flex-direction: column; gap: 0.2rem; }
+
+.gallery { margin-top: 1rem; }
+
+.color-group { margin-bottom: 2.5rem; }
+.color-group__title {
+  font-family: 'Cormorant Garamond', serif; font-weight: 500;
+  font-size: 1.15rem; color: var(--accent); letter-spacing: 0.05em;
+  padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem; text-transform: uppercase;
+}
+
+.filter-bar {
+  display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;
+  margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border);
+}
+.filter-group { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+.filter-label {
+  font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--text-sec); margin-right: 0.3rem; font-weight: 500;
+}
+.palette-filters { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.filter-chip {
+  padding: 0.3rem 0.85rem; border: 1px solid var(--border); border-radius: 100px;
+  background: transparent; color: var(--text-sec); cursor: pointer;
+  font-size: 0.78rem; letter-spacing: 0.02em; white-space: nowrap;
+}
+.filter-chip:hover { border-color: var(--accent); color: var(--accent); }
+.filter-chip--active {
+  background: var(--accent); color: var(--accent-contrast);
+  border-color: var(--accent);
+}
+
+.outfit-grid {
+  display: grid; grid-template-columns: 1fr; gap: 1.25rem;
+}
+.outfit-grid .outfit-card__image { max-height: 360px; }
+
+.footer {
+  text-align: center; padding-top: 2rem; margin-top: 3rem;
+  border-top: 1px solid var(--border); color: var(--text-sec); font-size: 0.8rem;
+}
+
+@media (min-width: 640px) {
+  .outfit-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 960px) {
+  .outfit-grid { grid-template-columns: repeat(3, 1fr); }
+  .header__title { font-size: 2rem; }
+}

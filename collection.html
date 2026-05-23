@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection &middot; Daily Outfit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__nav">
+      <a href="index.html" class="back-link">&larr; Today's Pick</a>
+      <h1 class="header__title">Collection</h1>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <span id="theme-icon">&#9790;</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <div class="filter-bar" id="filter-bar">
+        <div class="filter-group">
+          <span class="filter-label">Pieces</span>
+          <button class="filter-chip filter-chip--active" data-filter="count" data-value="all">All</button>
+          <button class="filter-chip" data-filter="count" data-value="2">2-Piece</button>
+          <button class="filter-chip" data-filter="count" data-value="3">3-Piece</button>
+        </div>
+      </div>
+      <div id="collection-groups"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>57 curated outfits &middot; styled with care</p>
+  </footer>
+
+  <script src="collection.js" defer></script>
+</body>
+</html>

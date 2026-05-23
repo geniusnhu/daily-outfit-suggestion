@@ -1,0 +1,744 @@
+[
+  {
+    "outfit_no": 1,
+    "set": 1,
+    "palette": "Cream + Charcoal/Taupe",
+    "item_count": 2,
+    "item_1": "IMG_2662 — light beige/cream short-sleeve button-up shirt",
+    "item_2": "IMG_2664 — charcoal taupe pleated trousers",
+    "item_3": "",
+    "why_it_works": "Soft neutral top with darker elegant trousers",
+    "image_path": "outfits/outfit_01.png"
+  },
+  {
+    "outfit_no": 2,
+    "set": 1,
+    "palette": "Chocolate Brown + Ivory",
+    "item_count": 2,
+    "item_1": "IMG_2667 — chocolate striped button-up blouse",
+    "item_2": "IMG_2669 — ivory tailored trousers",
+    "item_3": "",
+    "why_it_works": "Rich brown + clean ivory, very old-money",
+    "image_path": "outfits/outfit_02.png"
+  },
+  {
+    "outfit_no": 3,
+    "set": 1,
+    "palette": "Sage + White",
+    "item_count": 2,
+    "item_1": "IMG_2668 — sage green button-up shirt",
+    "item_2": "IMG_2665 — white high-waisted trousers",
+    "item_3": "",
+    "why_it_works": "Sage acts as a refined accent against white",
+    "image_path": "outfits/outfit_03.png"
+  },
+  {
+    "outfit_no": 4,
+    "set": 1,
+    "palette": "Navy + White",
+    "item_count": 2,
+    "item_1": "IMG_2676 — navy short-sleeve button-up shirt",
+    "item_2": "IMG_2665 — white high-waisted trousers",
+    "item_3": "",
+    "why_it_works": "Classic navy-neutral pairing",
+    "image_path": "outfits/outfit_04.png"
+  },
+  {
+    "outfit_no": 5,
+    "set": 1,
+    "palette": "Black + White",
+    "item_count": 2,
+    "item_1": "IMG_2670 — black square-neck fitted top",
+    "item_2": "IMG_2669 — ivory tailored trousers",
+    "item_3": "",
+    "why_it_works": "Minimal, sharp, elegant contrast",
+    "image_path": "outfits/outfit_05.png"
+  },
+  {
+    "outfit_no": 6,
+    "set": 1,
+    "palette": "Black + White/Ivory + Soft Gold",
+    "item_count": 3,
+    "item_1": "IMG_2661 — black short-sleeve asymmetric top",
+    "item_2": "IMG_2663 — ivory cropped short-sleeve jacket with gold buttons",
+    "item_3": "IMG_2665 — white trousers",
+    "why_it_works": "Uses gold buttons as the small elegant accent",
+    "image_path": "outfits/outfit_06.png"
+  },
+  {
+    "outfit_no": 7,
+    "set": 1,
+    "palette": "Chocolate Brown + Cream + Charcoal/Taupe",
+    "item_count": 3,
+    "item_1": "IMG_2674 — chocolate brown blazer",
+    "item_2": "IMG_2662 — cream short-sleeve shirt",
+    "item_3": "IMG_2664 — charcoal taupe trousers",
+    "why_it_works": "Rich neutral layering, polished and balanced" ,  
+    "image_path": "outfits/outfit_07.png"
+  },
+  {
+    "outfit_no": 8,
+    "set": 1,
+    "palette": "Taupe + Burgundy + Ivory",
+    "item_count": 3,
+    "item_1": "IMG_2675 — taupe-beige blazer",
+    "item_2": "IMG_2677 — deep burgundy/plum ruffle-sleeve blouse",
+    "item_3": "IMG_2669 — ivory trousers",
+    "why_it_works": "Burgundy is the rich accent, softened by taupe and ivory",
+    "image_path": "outfits/outfit_08.png"
+  },
+  {
+    "outfit_no": 9,
+    "set": 1,
+    "palette": "Chocolate Brown + Sage + Ivory",
+    "item_count": 3,
+    "item_1": "IMG_2674 — chocolate brown blazer",
+    "item_2": "IMG_2668 — sage green button-up shirt",
+    "item_3": "IMG_2669 — ivory trousers",
+    "why_it_works": "Sage is elegant and muted; brown makes it richer",
+    "image_path": "outfits/outfit_09.png"
+  },
+  {
+    "outfit_no": 10,
+    "set": 1,
+    "palette": "Taupe + Black + White",
+    "item_count": 3,
+    "item_1": "IMG_2675 — taupe-beige blazer",
+    "item_2": "IMG_2670 — black square-neck fitted top",
+    "item_3": "IMG_2665 — white trousers",
+    "why_it_works": "Clean, modern neutral palette with strong contrast",
+    "image_path": "outfits/outfit_10.png"
+  },
+  {
+    "outfit_no": 11,
+    "set": 2,
+    "palette": "Taupe/Gray + White",
+    "item_count": 2,
+    "item_1": "IMG_2671 — taupe/gray striped shirt",
+    "item_2": "IMG_2665 — white trousers",
+    "item_3": "",
+    "why_it_works": "Soft neutral daily outfit, clean and easy",
+    "image_path": "outfits/outfit_11.png"
+  },
+  {
+    "outfit_no": 12,
+    "set": 2,
+    "palette": "Taupe/Gray + Ivory",
+    "item_count": 2,
+    "item_1": "IMG_2671 — taupe/gray striped shirt",
+    "item_2": "IMG_2669 — ivory trousers",
+    "item_3": "",
+    "why_it_works": "More muted and elegant than pure white",
+    "image_path": "outfits/outfit_12.png"
+  },
+  {
+    "outfit_no": 13,
+    "set": 2,
+    "palette": "Black + White",
+    "item_count": 2,
+    "item_1": "IMG_2672 — black-white striped oversized shirt",
+    "item_2": "IMG_2665 — white trousers",
+    "item_3": "",
+    "why_it_works": "Simple monochrome outfit with texture",
+    "image_path": "outfits/outfit_13.png"
+  },
+  {
+    "outfit_no": 14,
+    "set": 2,
+    "palette": "Black + Ivory",
+    "item_count": 2,
+    "item_1": "IMG_2672 — black-white striped oversized shirt",
+    "item_2": "IMG_2669 — ivory trousers",
+    "item_3": "",
+    "why_it_works": "Softer version of black-and-white",
+    "image_path": "outfits/outfit_14.png"
+  },
+  {
+    "outfit_no": 15,
+    "set": 2,
+    "palette": "Forest Green + White",
+    "item_count": 2,
+    "item_1": "IMG_2673 — olive/forest green shirt",
+    "item_2": "IMG_2665 — white trousers",
+    "item_3": "",
+    "why_it_works": "Rich green accent with clean neutral base",
+    "image_path": "outfits/outfit_15.png"
+  },
+  {
+    "outfit_no": 16,
+    "set": 2,
+    "palette": "Forest Green + Ivory",
+    "item_count": 2,
+    "item_1": "IMG_2673 — olive/forest green shirt",
+    "item_2": "IMG_2669 — ivory trousers",
+    "item_3": "",
+    "why_it_works": "Elegant and less bright than white",
+    "image_path": "outfits/outfit_16.png"
+  },
+  {
+    "outfit_no": 17,
+    "set": 2,
+    "palette": "Dusty Purple + White + Black",
+    "item_count": 3,
+    "item_1": "IMG_2666 — dusty purple short-sleeve blazer",
+    "item_2": "IMG_2670 — black square-neck top",
+    "item_3": "IMG_2665 — white trousers",
+    "why_it_works": "Purple acts as a soft accent; black keeps it mature",
+    "image_path": "outfits/outfit_17.png"
+  },
+  {
+    "outfit_no": 18,
+    "set": 2,
+    "palette": "Ivory + Black + White",
+    "item_count": 3,
+    "item_1": "IMG_2679 — ivory short-sleeve blazer",
+    "item_2": "IMG_2670 — black square-neck top",
+    "item_3": "IMG_2665 — white trousers",
+    "why_it_works": "Polished office-style outfit",
+    "image_path": "outfits/outfit_18.png"
+  },
+  {
+    "outfit_no": 19,
+    "set": 2,
+    "palette": "Bright Green + White",
+    "item_count": 2,
+    "item_1": "IMG_2680 — bright green sheer overshirt",
+    "item_2": "IMG_2665 — white trousers",
+    "item_3": "",
+    "why_it_works": "Fresh daily outfit; green is the statement color",
+    "image_path": "outfits/outfit_19.png"
+  },
+  {
+    "outfit_no": 20,
+    "set": 2,
+    "palette": "Bright Green + Ivory + Black",
+    "item_count": 3,
+    "item_1": "IMG_2680 — bright green sheer overshirt",
+    "item_2": "IMG_2670 — black top",
+    "item_3": "IMG_2669 — ivory trousers",
+    "why_it_works": "More balanced because black grounds the bright green",
+    "image_path": "outfits/outfit_20.png"
+  },
+  {
+    "outfit_no": 21,
+    "set": 3,
+    "palette": "Cream + Camel",
+    "item_count": 2,
+    "item_1": "IMG_2662 — cream short-sleeve button-up shirt",
+    "item_2": "IMG_2693 — camel wide-leg trousers",
+    "item_3": "",
+    "why_it_works": "Classic elegant neutral outfit, very daily-wear friendly",
+    "image_path": "outfits/outfit_21.png"
+  },
+  {
+    "outfit_no": 22,
+    "set": 3,
+    "palette": "Black + Camel",
+    "item_count": 2,
+    "item_1": "IMG_2670 — black square-neck fitted top",
+    "item_2": "IMG_2693 — camel wide-leg trousers",
+    "item_3": "",
+    "why_it_works": "Simple, rich, and polished",
+    "image_path": "outfits/outfit_22.png"
+  },
+  {
+    "outfit_no": 23,
+    "set": 3,
+    "palette": "Navy + Camel",
+    "item_count": 2,
+    "item_1": "IMG_2676 — navy short-sleeve button-up shirt",
+    "item_2": "IMG_2693 — camel wide-leg trousers",
+    "item_3": "",
+    "why_it_works": "Navy makes the camel trousers look more refined",
+    "image_path": "outfits/outfit_23.png"
+  },
+  {
+    "outfit_no": 24,
+    "set": 3,
+    "palette": "Sage + Camel",
+    "item_count": 2,
+    "item_1": "IMG_2668 — sage green button-up shirt",
+    "item_2": "IMG_2693 — camel wide-leg trousers",
+    "item_3": "",
+    "why_it_works": "Soft green with camel feels natural and elegant",
+    "image_path": "outfits/outfit_24.png"
+  },
+  {
+    "outfit_no": 25,
+    "set": 3,
+    "palette": "Chocolate Brown + Dusty Blue",
+    "item_count": 2,
+    "item_1": "IMG_2667 — chocolate striped blouse",
+    "item_2": "IMG_2691 — dusty blue pleated midi skirt",
+    "item_3": "",
+    "why_it_works": "Feminine but still mature; brown balances the blue skirt",
+    "image_path": "outfits/outfit_25.png"
+  },
+  {
+    "outfit_no": 26,
+    "set": 3,
+    "palette": "Black + Dusty Blue",
+    "item_count": 2,
+    "item_1": "IMG_2661 — black asymmetric top",
+    "item_2": "IMG_2691 — dusty blue pleated midi skirt",
+    "item_3": "",
+    "why_it_works": "Clean contrast, good for a slightly dressier daily outfit",
+    "image_path": "outfits/outfit_26.png"
+  },
+  {
+    "outfit_no": 27,
+    "set": 3,
+    "palette": "Ivory + Dusty Blue + Soft Gold",
+    "item_count": 3,
+    "item_1": "IMG_2663 — ivory cropped short-sleeve jacket with gold buttons",
+    "item_2": "IMG_2661 — black short-sleeve top",
+    "item_3": "IMG_2691 — dusty blue skirt",
+    "why_it_works": "Uses gold buttons as a small accent; no long-sleeve shirt under short-sleeve jacket",
+    "image_path": "outfits/outfit_27.png"
+  },
+  {
+    "outfit_no": 28,
+    "set": 3,
+    "palette": "Black + Mustard Yellow",
+    "item_count": 2,
+    "item_1": "IMG_2670 — black square-neck top",
+    "item_2": "IMG_2690 — mustard yellow slim ankle trousers",
+    "item_3": "",
+    "why_it_works": "Bold but still simple because only 2 colors",
+    "image_path": "outfits/outfit_28.png"
+  },
+  {
+    "outfit_no": 29,
+    "set": 3,
+    "palette": "Cream + Mustard Yellow",
+    "item_count": 2,
+    "item_1": "IMG_2662 — cream short-sleeve button-up shirt",
+    "item_2": "IMG_2690 — mustard yellow trousers",
+    "item_3": "",
+    "why_it_works": "Softer and more casual than black + mustard",
+    "image_path": "outfits/outfit_29.png"
+  },
+  {
+    "outfit_no": 30,
+    "set": 3,
+    "palette": "Rust Orange + Black + Ivory",
+    "item_count": 2,
+    "item_1": "IMG_2698 — rust orange printed long-sleeve blouse",
+    "item_2": "IMG_2669 — ivory tailored trousers",
+    "item_3": "",
+    "why_it_works": "The rust blouse is the accent; ivory keeps it wearable and elegant",
+    "image_path": "outfits/outfit_30.png"
+  },
+  {
+    "outfit_no": 31,
+    "set": 4,
+    "palette": "Taupe + Black + Ivory",
+    "item_count": 3,
+    "item_1": "IMG_2675 — taupe-beige blazer",
+    "item_2": "IMG_2670 — black square-neck top",
+    "item_3": "IMG_2669 — ivory trousers",
+    "why_it_works": "Similar elegant base as before, but with ivory trousers instead of white",
+    "image_path": "outfits/outfit_31.png"
+  },
+  {
+    "outfit_no": 32,
+    "set": 4,
+    "palette": "Chocolate Brown + Black + White",
+    "item_count": 3,
+    "item_1": "IMG_2674 — chocolate brown blazer",
+    "item_2": "IMG_2670 — black square-neck top",
+    "item_3": "IMG_2665 — white trousers",
+    "why_it_works": "Strong polished blazer outfit; good for work or daily wear",
+    "image_path": "outfits/outfit_32.png"
+  },
+  {
+    "outfit_no": 33,
+    "set": 4,
+    "palette": "Taupe + Navy + White",
+    "item_count": 3,
+    "item_1": "IMG_2675 — taupe-beige blazer",
+    "item_2": "IMG_2676 — navy short-sleeve button-up shirt",
+    "item_3": "IMG_2665 — white trousers",
+    "why_it_works": "Navy is the refined accent under a soft neutral blazer",
+    "image_path": "outfits/outfit_33.png"
+  },
+  {
+    "outfit_no": 34,
+    "set": 4,
+    "palette": "Chocolate Brown + Navy + Ivory",
+    "item_count": 3,
+    "item_1": "IMG_2674 — chocolate brown blazer",
+    "item_2": "IMG_2676 — navy short-sleeve shirt",
+    "item_3": "IMG_2669 — ivory trousers",
+    "why_it_works": "Rich, mature, and more formal than navy + white",
+    "image_path": "outfits/outfit_34.png"
+  },
+  {
+    "outfit_no": 35,
+    "set": 4,
+    "palette": "Ivory + Burgundy + Charcoal Taupe",
+    "item_count": 3,
+    "item_1": "IMG_2679 — ivory short-sleeve blazer",
+    "item_2": "IMG_2677 — burgundy ruffle-sleeve blouse",
+    "item_3": "IMG_2664 — charcoal taupe trousers",
+    "why_it_works": "Burgundy becomes the elegant accent; no long-sleeve shirt under short-sleeve blazer",
+    "image_path": "outfits/outfit_35.png"
+  },
+  {
+    "outfit_no": 36,
+    "set": 4,
+    "palette": "Dusty Purple + Black + Ivory",
+    "item_count": 3,
+    "item_1": "IMG_2666 — dusty purple short-sleeve blazer",
+    "item_2": "IMG_2670 — black square-neck top",
+    "item_3": "IMG_2669 — ivory trousers",
+    "why_it_works": "Softer version of the purple blazer outfit, using ivory instead of white",
+    "image_path": "outfits/outfit_36.png"
+  },
+  {
+    "outfit_no": 37,
+    "set": 4,
+    "palette": "Chocolate Brown + Floral Black + Ivory",
+    "item_count": 3,
+    "item_1": "IMG_2674 — chocolate brown blazer",
+    "item_2": "IMG_2695 — black floral long-sleeve blouse",
+    "item_3": "IMG_2669 — ivory trousers",
+    "why_it_works": "The floral blouse adds detail, while brown and ivory keep it elegant",
+    "image_path": "outfits/outfit_37.png"
+  },
+  {
+    "outfit_no": 38,
+    "set": 4,
+    "palette": "Taupe + Floral Black + White",
+    "item_count": 3,
+    "item_1": "IMG_2675 — taupe-beige blazer",
+    "item_2": "IMG_2695 — black floral long-sleeve blouse",
+    "item_3": "IMG_2665 — white trousers",
+    "why_it_works": "Feminine but still clean; the taupe blazer softens the black floral top",
+    "image_path": "outfits/outfit_38.png"
+  },
+  {
+    "outfit_no": 39,
+    "set": 4,
+    "palette": "Ivory + Black + Camel",
+    "item_count": 3,
+    "item_1": "IMG_2679 — ivory short-sleeve blazer",
+    "item_2": "IMG_2670 — black square-neck top",
+    "item_3": "IMG_2693 — camel wide-leg trousers",
+    "why_it_works": "Very wearable old-money palette with a warm bottom",
+    "image_path": "outfits/outfit_39.png"
+  },
+  {
+    "outfit_no": 40,
+    "set": 4,
+    "palette": "Chocolate Brown + Cream + Camel",
+    "item_count": 3,
+    "item_1": "IMG_2674 — chocolate brown blazer",
+    "item_2": "IMG_2662 — cream short-sleeve shirt",
+    "item_3": "IMG_2693 — camel wide-leg trousers",
+    "why_it_works": "Warm neutral blazer outfit; rich but not too dark",
+    "image_path": "outfits/outfit_40.png"
+  },
+  {
+
+    "outfit_no": 41,
+
+    "set": 5,
+
+    "palette": "Taupe + Cream + Camel",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2675 — taupe-beige blazer",
+
+    "item_2": "IMG_2662 — cream short-sleeve shirt",
+
+    "item_3": "IMG_2693 — camel wide-leg trousers",
+
+    "why_it_works": "Soft warm neutral outfit, very elegant for daily wear",
+
+    "image_path": "outfits/outfit_41.png"
+
+  },
+
+  {
+
+    "outfit_no": 42,
+
+    "set": 5,
+
+    "palette": "Chocolate Brown + Sage + Camel",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2674 — chocolate brown blazer",
+
+    "item_2": "IMG_2668 — sage green shirt",
+
+    "item_3": "IMG_2693 — camel trousers",
+
+    "why_it_works": "Rich but still soft; sage works as a muted accent",
+
+    "image_path": "outfits/outfit_42.png"
+
+  },
+
+  {
+
+    "outfit_no": 43,
+
+    "set": 5,
+
+    "palette": "Taupe + Sage + Ivory",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2675 — taupe-beige blazer",
+
+    "item_2": "IMG_2668 — sage green shirt",
+
+    "item_3": "IMG_2669 — ivory trousers",
+
+    "why_it_works": "Calm, refined, and not too bright",
+
+    "image_path": "outfits/outfit_43.png"
+
+  },
+
+  {
+
+    "outfit_no": 44,
+
+    "set": 5,
+
+    "palette": "Chocolate Brown + Burgundy + White",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2674 — chocolate brown blazer",
+
+    "item_2": "IMG_2677 — burgundy ruffle-sleeve blouse",
+
+    "item_3": "IMG_2665 — white trousers",
+
+    "why_it_works": "Burgundy is elegant and feminine; brown makes it mature",
+
+    "image_path": "outfits/outfit_44.png"
+
+  },
+
+  {
+
+    "outfit_no": 45,
+
+    "set": 5,
+
+    "palette": "Taupe + Burgundy + Camel",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2675 — taupe-beige blazer",
+
+    "item_2": "IMG_2677 — burgundy blouse",
+
+    "item_3": "IMG_2693 — camel trousers",
+
+    "why_it_works": "Warm old-money palette with a rich accent",
+
+    "image_path": "outfits/outfit_45.png"
+
+  },
+
+  {
+
+    "outfit_no": 46,
+
+    "set": 5,
+
+    "palette": "Ivory + Sage + Charcoal Taupe",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2679 — ivory short-sleeve blazer",
+
+    "item_2": "IMG_2668 — sage green shirt",
+
+    "item_3": "IMG_2664 — charcoal taupe trousers",
+
+    "why_it_works": "Polished, soft, and balanced",
+
+    "image_path": "outfits/outfit_46.png"
+
+  },
+
+  {
+
+    "outfit_no": 47,
+
+    "set": 5,
+
+    "palette": "Dusty Purple + Cream + Camel",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2666 — dusty purple short-sleeve blazer",
+
+    "item_2": "IMG_2662 — cream short-sleeve shirt",
+
+    "item_3": "IMG_2693 — camel trousers",
+
+    "why_it_works": "Soft feminine blazer outfit without looking too bright",
+
+    "image_path": "outfits/outfit_47.png"
+
+  },
+
+  {
+
+    "outfit_no": 48,
+
+    "set": 5,
+
+    "palette": "Ivory + Chocolate Brown + Camel",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2679 — ivory short-sleeve blazer",
+
+    "item_2": "IMG_2667 — chocolate striped blouse",
+
+    "item_3": "IMG_2693 — camel trousers",
+
+    "why_it_works": "Rich neutral outfit with texture from the striped blouse",
+
+    "image_path": "outfits/outfit_48.png"
+
+  },
+
+  {
+
+    "outfit_no": 49,
+
+    "set": 5,
+
+    "palette": "Chocolate Brown + Rust Orange + Ivory",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2674 — chocolate brown blazer",
+
+    "item_2": "IMG_2698 — rust orange printed blouse",
+
+    "item_3": "IMG_2669 — ivory trousers",
+
+    "why_it_works": "Warm autumn-style outfit; rust is the accent",
+
+    "image_path": "outfits/outfit_49.png"
+
+  },
+
+  {
+
+    "outfit_no": 50,
+
+    "set": 5,
+
+    "palette": "Taupe + Dusty Blue + Cream",
+
+    "item_count": 3,
+
+    "item_1": "IMG_2675 — taupe-beige blazer",
+
+    "item_2": "IMG_2662 — cream short-sleeve shirt",
+
+    "item_3": "IMG_2691 — dusty blue pleated skirt",
+
+    "why_it_works": "Soft, feminine, and lighter than the darker previous skirt outfits",
+
+    "image_path": "outfits/outfit_50.png"
+
+  },
+  {
+    "outfit_no": 52,
+    "set": 6,
+    "palette": "Camel + Green",
+    "item_count": 2,
+    "item_1": "IMG_2699 — camel geometric short-sleeve shirt",
+    "item_2": "IMG_2700 — green pleated midi skirt",
+    "why_it_works": "Warm camel balances the richer green skirt",
+    "image_path": "outfits/outfit_52.png"
+  },
+  {
+    "outfit_no": 53,
+    "set": 6,
+    "palette": "Orange/Camel + Ivory",
+    "item_count": 2,
+    "item_1": "IMG_2701 — orange/camel ribbed long-sleeve shirt",
+    "item_2": "IMG_2669 — ivory tailored trousers",
+    "why_it_works": "Soft warm top with clean ivory bottom",
+    "image_path": "outfits/outfit_53.png"
+  },
+  {
+    "outfit_no": 54,
+    "set": 6,
+    "palette": "Orange/Camel + White",
+    "item_count": 2,
+    "item_1": "IMG_2701 — orange/camel ribbed long-sleeve shirt",
+    "item_2": "IMG_2665 — white trousers",
+    "why_it_works": "Brighter and fresher version of the warm-orange outfit",
+    "image_path": "outfits/outfit_54.png"
+  },
+  {
+    "outfit_no": 55,
+    "set": 6,
+    "palette": "Soft Beige + Charcoal Taupe",
+    "item_count": 2,
+    "item_1": "IMG_2697 — soft beige short-sleeve shirt",
+    "item_2": "IMG_2664 — charcoal taupe trousers",
+    "why_it_works": "Quiet neutral outfit, good for simple daily wear",
+    "image_path": "outfits/outfit_55.png"
+  },
+  {
+    "outfit_no": 56,
+    "set": 6,
+    "palette": "Camel Print + Ivory",
+    "item_count": 2,
+    "item_1": "IMG_2699 — camel geometric shirt",
+    "item_2": "IMG_2669 — ivory trousers",
+    "why_it_works": "Elegant because the printed top is softened by ivory",
+    "image_path": "outfits/outfit_56.png"
+  },
+  {
+    "outfit_no": 58,
+    "set": 6,
+    "palette": "Taupe + Camel Print + Green",
+    "item_count": 3,
+    "item_1": "IMG_2675 — taupe-beige blazer",
+    "item_2": "IMG_2699 — camel geometric shirt",
+    "item_3": "IMG_2700 — green pleated skirt",
+    "why_it_works": "Patterned camel shirt adds interest while taupe keeps it calm",
+    "image_path": "outfits/outfit_58.png"
+  },
+  {
+    "outfit_no": 59,
+    "set": 6,
+    "palette": "Chocolate Brown + Orange/Camel + Ivory",
+    "item_count": 3,
+    "item_1": "IMG_2674 — chocolate brown blazer",
+    "item_2": "IMG_2701 — orange ribbed long-sleeve shirt",
+    "item_3": "IMG_2669 — ivory trousers",
+    "why_it_works": "Warm, mature, and autumn-like; good for workwear",
+    "image_path": "outfits/outfit_59.png"
+  },
+  {
+    "outfit_no": 60,
+    "set": 6,
+    "palette": "Taupe + Orange/Camel + Camel",
+    "item_count": 3,
+    "item_1": "IMG_2675 — taupe-beige blazer",
+    "item_2": "IMG_2701 — orange ribbed shirt",
+    "item_3": "IMG_2693 — camel wide-leg trousers",
+    "why_it_works": "Warm tonal outfit, elegant without using black or navy",
+    "image_path": "outfits/outfit_60.png"
+  }
+]

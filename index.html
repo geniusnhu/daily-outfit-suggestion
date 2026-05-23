@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Outfit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Daily Outfit</h1>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <span id="theme-icon">&#9790;</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <h2 class="section-title">Today's Suggestion</h2>
+      <div class="outfit-card outfit-card--hero">
+        <div class="outfit-card__image-wrap">
+          <img id="hero-image" class="outfit-card__image" src="" alt="Today's outfit suggestion">
+        </div>
+        <div class="outfit-card__info">
+          <p class="outfit-card__palette" id="hero-palette"></p>
+          <p class="outfit-card__rationale" id="hero-rationale"></p>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <button id="worn-btn" class="btn-worn" aria-label="Mark as worn today">
+          ○  Wear Today?
+        </button>
+        <button id="shuffle-btn" class="btn-shuffle" aria-label="Shuffle outfit">
+          &#8635; Shuffle
+        </button>
+      </div>
+      <a href="collection.html" class="browse-link">Browse Full Collection &rarr;</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>57 curated outfits &middot; styled with care</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
