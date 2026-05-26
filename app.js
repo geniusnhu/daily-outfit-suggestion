@@ -98,20 +98,29 @@
     updateWornButton();
   }
 
-  function shuffleOutfit() {
+  function matchesCountFilter(outfit, countFilter) {
+    if (countFilter === 'all') return true;
+    return outfit.item_count === parseInt(countFilter, 10);
+  }
+
+  function shuffleOutfit(countFilter) {
     var worn = getWornHistory();
+    var pool = outfits.filter(function (o) { return matchesCountFilter(o, countFilter); });
+    if (pool.length === 0) return;
+
     var available = [];
     outfits.forEach(function (o, i) {
+      if (!matchesCountFilter(o, countFilter)) return;
       if (i !== currentHeroIndex && worn.indexOf(o.outfit_no) === -1) available.push(i);
     });
     if (available.length === 0) {
       outfits.forEach(function (o, i) {
+        if (!matchesCountFilter(o, countFilter)) return;
         if (i !== currentHeroIndex) available.push(i);
       });
     }
     if (available.length === 0) return;
     renderHero(available[Math.floor(Math.random() * available.length)]);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -121,7 +130,11 @@
       .then(function (data) {
         outfits = data.filter(function (o) { return !o.image_path.includes('outfit_18'); });
         renderHero(pickDailyOutfit());
-        $('shuffle-btn').addEventListener('click', shuffleOutfit);
+        document.querySelectorAll('[data-shuffle-count]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            shuffleOutfit(btn.dataset.shuffleCount);
+          });
+        });
         $('worn-btn').addEventListener('click', toggleWorn);
       });
   });

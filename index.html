@@ -20,24 +20,39 @@
   <main>
     <section id="hero" class="hero">
       <h2 class="section-title">Today's Suggestion</h2>
-      <div class="outfit-card outfit-card--hero">
-        <div class="outfit-card__image-wrap">
-          <img id="hero-image" class="outfit-card__image" src="" alt="Today's outfit suggestion">
-        </div>
-        <div class="outfit-card__info">
-          <p class="outfit-card__palette" id="hero-palette"></p>
-          <p class="outfit-card__rationale" id="hero-rationale"></p>
+      <div class="hero-layout">
+        <aside class="hero-controls">
+          <div class="hero-actions">
+            <button id="worn-btn" class="btn-worn" aria-label="Mark as worn today">
+              ○  Wear Today?
+            </button>
+          </div>
+          <div class="shuffle-actions">
+            <span class="shuffle-label">Shuffle</span>
+            <div class="shuffle-buttons">
+              <button class="btn-shuffle" data-shuffle-count="2" aria-label="Shuffle among 2-piece outfits">
+                &#8635; 2-Piece
+              </button>
+              <button class="btn-shuffle" data-shuffle-count="3" aria-label="Shuffle among 3-piece outfits">
+                &#8635; 3-Piece
+              </button>
+              <button class="btn-shuffle" data-shuffle-count="all" aria-label="Shuffle among all outfits">
+                &#8635; All Outfits
+              </button>
+            </div>
+          </div>
+          <a href="collection.html" class="browse-link">Browse Full Collection &rarr;</a>
+        </aside>
+        <div class="outfit-card outfit-card--hero">
+          <div class="outfit-card__image-wrap">
+            <img id="hero-image" class="outfit-card__image" src="" alt="Today's outfit suggestion">
+          </div>
+          <div class="outfit-card__info">
+            <p class="outfit-card__palette" id="hero-palette"></p>
+            <p class="outfit-card__rationale" id="hero-rationale"></p>
+          </div>
         </div>
       </div>
-      <div class="hero-actions">
-        <button id="worn-btn" class="btn-worn" aria-label="Mark as worn today">
-          ○  Wear Today?
-        </button>
-        <button id="shuffle-btn" class="btn-shuffle" aria-label="Shuffle outfit">
-          &#8635; Shuffle
-        </button>
-      </div>
-      <a href="collection.html" class="browse-link">Browse Full Collection &rarr;</a>
     </section>
   </main>
 
