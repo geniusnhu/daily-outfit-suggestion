@@ -22,6 +22,13 @@
       <h2 class="section-title">Today's Suggestion</h2>
       <div class="hero-layout">
         <aside class="hero-controls">
+          <div class="wardrobe-actions">
+            <span class="shuffle-label">Wardrobe</span>
+            <div class="wardrobe-switch" role="group" aria-label="Choose wardrobe">
+              <button class="wardrobe-btn" data-gender="female">Women</button>
+              <button class="wardrobe-btn" data-gender="male">Men</button>
+            </div>
+          </div>
           <div class="hero-actions">
             <button id="worn-btn" class="btn-worn" aria-label="Mark as worn today">
               ○  Wear Today?
@@ -57,7 +64,7 @@
   </main>
 
   <footer class="footer">
-    <p>57 curated outfits &middot; styled with care</p>
+    <p>Curated outfits &middot; styled with care</p>
   </footer>
 
   <script src="app.js" defer></script>

@@ -43,6 +43,39 @@ body {
   margin-bottom: 1.5rem; letter-spacing: 0.06em; text-transform: uppercase;
 }
 
+.wardrobe-switch {
+  display: flex; width: max-content; margin: 0 auto 2rem; padding: 0.25rem;
+  border: 1px solid var(--border); border-radius: 100px; background: var(--bg-card);
+}
+.wardrobe-btn {
+  padding: 0.45rem 1.5rem; border: none; border-radius: 100px; cursor: pointer;
+  background: transparent; color: var(--text-sec);
+  font-family: 'Cormorant Garamond', serif; font-size: 0.95rem;
+  font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.wardrobe-btn:hover { color: var(--accent); }
+.wardrobe-btn--active {
+  background: var(--accent); color: var(--accent-contrast);
+}
+
+/* Wardrobe selector inside the hero controls column: left-aligned, full width */
+.wardrobe-actions {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 0.55rem;
+  width: 100%;
+}
+.hero-controls .wardrobe-switch { width: 100%; margin: 0; }
+.hero-controls .wardrobe-btn { flex: 1; padding-left: 0; padding-right: 0; text-align: center; }
+
+.collection-empty {
+  text-align: center; color: var(--text-sec); font-style: italic;
+  font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; padding: 2.5rem 1rem;
+}
+
+.btn-shuffle:disabled, .btn-worn:disabled {
+  opacity: 0.4; cursor: not-allowed; border-color: var(--border); color: var(--text-sec);
+  background: transparent;
+}
+
 .outfit-card {
   background: var(--bg-card); border: 1px solid var(--border);
   border-radius: 12px; overflow: hidden;

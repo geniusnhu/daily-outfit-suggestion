@@ -1,6 +1,9 @@
 (function () {
+  var allOutfits = [];
   var outfits = [];
   var activeCountFilter = 'all';
+  var currentGender = 'female';
+  var GENDER_KEY = 'wardrobe-gender';
 
   var $ = function (id) { return document.getElementById(id); };
 
@@ -73,6 +76,15 @@
   function renderGrouped(list) {
     var container = $('collection-groups');
     container.innerHTML = '';
+    if (list.length === 0) {
+      var empty = document.createElement('p');
+      empty.className = 'collection-empty';
+      empty.textContent =
+        'No outfits in the ' + (currentGender === 'male' ? "men's" : "women's") +
+        ' wardrobe yet.';
+      container.appendChild(empty);
+      return;
+    }
     var result = groupByTopColor(list);
     result.order.forEach(function (color) {
       var section = document.createElement('div');
@@ -110,14 +122,37 @@
     });
   }
 
+  function loadGender(gender) {
+    currentGender = gender;
+    localStorage.setItem(GENDER_KEY, gender);
+    document.querySelectorAll('[data-gender]').forEach(function (btn) {
+      btn.classList.toggle('wardrobe-btn--active', btn.dataset.gender === gender);
+    });
+    outfits = allOutfits.filter(function (o) {
+      // Women's outfit 18 has no image on disk; skip only that one, not other wardrobes'.
+      if (gender === 'female' && o.image_path.includes('outfit_18')) return false;
+      return o.wardrobe_gender === gender;
+    });
+    applyFilters();
+  }
+
+  function initWardrobeSwitch() {
+    document.querySelectorAll('[data-gender]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (btn.dataset.gender !== currentGender) loadGender(btn.dataset.gender);
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initTheme();
+    initWardrobeSwitch();
+    initCountFilters();
     fetch('all_40_outfit_suggestions.json')
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        outfits = data.filter(function (o) { return !o.image_path.includes('outfit_18'); });
-        initCountFilters();
-        applyFilters();
+        allOutfits = data;
+        loadGender(localStorage.getItem(GENDER_KEY) || 'female');
       });
   });
 })();

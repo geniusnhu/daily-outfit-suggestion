@@ -1,7 +1,9 @@
 (function () {
+  var allOutfits = [];
   var outfits = [];
   var currentHeroIndex = -1;
-  var WORN_KEY = 'worn-history';
+  var currentGender = 'female';
+  var GENDER_KEY = 'wardrobe-gender';
   var MAX_WORN = 5;
 
   var $ = function (id) { return document.getElementById(id); };
@@ -26,13 +28,16 @@
     });
   }
 
+  // Worn history is namespaced per wardrobe so outfit numbers never collide across genders.
+  function wornKey() { return 'worn-history-' + currentGender; }
+
   function getWornHistory() {
-    try { return JSON.parse(localStorage.getItem(WORN_KEY)) || []; }
+    try { return JSON.parse(localStorage.getItem(wornKey())) || []; }
     catch (e) { return []; }
   }
 
   function saveWornHistory(history) {
-    localStorage.setItem(WORN_KEY, JSON.stringify(history.slice(-MAX_WORN)));
+    localStorage.setItem(wornKey(), JSON.stringify(history.slice(-MAX_WORN)));
   }
 
   function isWorn(outfitNo) {
@@ -86,10 +91,34 @@
     return outfits.indexOf(picked);
   }
 
+  function showEmptyState() {
+    currentHeroIndex = -1;
+    var img = $('hero-image');
+    img.src = '';
+    img.style.display = 'none';
+    $('hero-palette').textContent = 'Wardrobe is empty';
+    $('hero-rationale').textContent =
+      'No outfits in the ' + (currentGender === 'male' ? "men's" : "women's") +
+      ' wardrobe yet. Add some to start getting daily suggestions.';
+    var worn = $('worn-btn');
+    worn.disabled = true;
+    worn.textContent = '○  Wear Today?';
+    worn.classList.remove('btn-worn--active');
+    document.querySelectorAll('[data-shuffle-count]').forEach(function (btn) {
+      btn.disabled = true;
+    });
+  }
+
   function renderHero(index) {
     var o = outfits[index];
+    if (!o) { showEmptyState(); return; }
     currentHeroIndex = index;
+    $('worn-btn').disabled = false;
+    document.querySelectorAll('[data-shuffle-count]').forEach(function (btn) {
+      btn.disabled = false;
+    });
     var img = $('hero-image');
+    img.style.display = '';
     img.src = o.image_path;
     img.alt = o.palette + ' outfit';
     img.onerror = function () { this.style.display = 'none'; };
@@ -123,19 +152,42 @@
     renderHero(available[Math.floor(Math.random() * available.length)]);
   }
 
+  function loadGender(gender) {
+    currentGender = gender;
+    localStorage.setItem(GENDER_KEY, gender);
+    document.querySelectorAll('[data-gender]').forEach(function (btn) {
+      btn.classList.toggle('wardrobe-btn--active', btn.dataset.gender === gender);
+    });
+    outfits = allOutfits.filter(function (o) {
+      // Women's outfit 18 has no image on disk; skip only that one, not other wardrobes'.
+      if (gender === 'female' && o.image_path.includes('outfit_18')) return false;
+      return o.wardrobe_gender === gender;
+    });
+    renderHero(pickDailyOutfit());
+  }
+
+  function initWardrobeSwitch() {
+    document.querySelectorAll('[data-gender]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (btn.dataset.gender !== currentGender) loadGender(btn.dataset.gender);
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initTheme();
+    initWardrobeSwitch();
     fetch('all_40_outfit_suggestions.json')
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        outfits = data.filter(function (o) { return !o.image_path.includes('outfit_18'); });
-        renderHero(pickDailyOutfit());
+        allOutfits = data;
         document.querySelectorAll('[data-shuffle-count]').forEach(function (btn) {
           btn.addEventListener('click', function () {
             shuffleOutfit(btn.dataset.shuffleCount);
           });
         });
         $('worn-btn').addEventListener('click', toggleWorn);
+        loadGender(localStorage.getItem(GENDER_KEY) || 'female');
       });
   });
 })();
